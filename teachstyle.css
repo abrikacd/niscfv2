@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Cabin&family=Montserrat+Alternates:wght@300&family=Roboto&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Cabin&family=Montserrat+Alternates:wght@300&family=Raleway:wght@300&family=Roboto&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Cabin&family=Montserrat+Alternates:wght@300&family=Raleway:wght@300&family=Roboto&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Castoro&family=Catamaran:wght@600&family=Fira+Code&family=Karla&family=Noto+Serif&family=Nunito&family=Poppins&family=Questrial&family=Varela+Round&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+.fa-inbox{
+    color: #385662;
+    margin-top:70px;
+}
+body{
+    display: flex;
+}
+.user-pic{
+    margin-top: 10px;
+    width:40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left:104%;
+    position: relative;
+    transition: 0.25s;
+}
+.logo{
+    margin-top: 7px;
+    position: absolute;
+    margin-left: -100px;
+    height: 50px;
+	width: 200px;
+    cursor: pointer;
+}
+.container{
+    margin-top: 1%;
+    margin-left:40%;
+    width: 50%;
+    min-width: 220px;
+    max-width: 100px;
+    height: 70px;
+    text-align: center;
+    position: absolute;
+}
+form{
+    position: relative;
+}
+input{
+    font-family: 'Roboto Mono', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 25px;
+    font-size: 12px;
+    padding: 8px 40px 8px 20px;
+    border: none;
+    box-shadow: 0 5px 8px 3px rgb(141, 138, 138);
+}
+input:focus{
+    outline: none;
+}
+button{
+    position: absolute;
+    top:0;
+    right: -60px;
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 18px;
+}
+button i{
+    color: rgb(0, 0, 0);
+}
+button:hover i{
+    color: #527c82;
+}
+.above{
+    padding: 0px 10%;
+    width:1027px;
+    height: 64px;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+}
+.above nav ul li{ 
+    display:inline-block; 
+    width:auto; 
+    height:auto;
+    list-style:none; 
+    padding:5px; 
+    margin:auto;   
+} 
+.call{
+    z-index:1;
+    margin-top: 10px;
+    width:60px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left:83%;
+    position: relative;
+}
+.pfp{
+    margin-right: 15px;
+    width:60px;
+    cursor: pointer;
+    position: relative;
+}
+.sub-menu-wrap{
+    position: relative;
+    top:100%;
+    left:75%;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.sub-menu{
+    width: 270px;
+    background: #50596c;
+    padding:20px;
+    margin:10px;
+}
+.sub-menu-wrap.open-menu{
+    max-height:400px;
+}
+.user-info{
+    display: flex;
+    align-items: center;
+}
+.user-info h2{
+    font-weight: 500;
+    margin-left: 5px;
+    font-size: 37px;
+    color: white;
+    font-family: 'Alata', sans-serif;
+}
+.sub-menu hr{
+    border:0;
+    height:1px;
+    width:100%;
+    background: rgb(255, 255, 255);
+    margin:15px 0 10px;
+}
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:#d3d8e3;
+    margin:12px 0;
+}
+.sub-menu-link p{
+    width:100%;
+    font-family: 'Poppins',sans-serif;
+}
+.fa-pencil{
+    font-size: 30px;
+    margin-right: 15px;
+    margin-top: 10px;
+    transition: 0.25s;
+}
+.fa-cog{
+    font-size: 30px;
+    margin-right: 15px;
+    margin-top: 10px;
+    transition: 0.25s;
+}
+.fa-question-circle{
+    font-size: 30px;
+    margin-right: 15px;
+    margin-top: 10px;
+    transition: 0.25s;
+}
+.fa-sign-out{
+    font-size: 30px;
+    margin-right: 15px;
+    margin-top: 10px;
+    transition: 0.25s;
+}
+.sub-menu-link span{
+    font-size: 22px;
+    transition: 0.25s;
+}
+.sub-menu-link:hover span{
+    transform: translateX(5px) ;
+}
+.sub-menu-link:hover p{
+    font-weight: 700;
+    color:#ffffff;
+}
+.fa-pencil:hover{
+    color:#ffffff;
+}
+.fa-cog:hover{
+    color:#ffffff;
+}
+.fa-question-circle:hover{
+    color:#ffffff;
+}
+.fa-sign-out:hover{
+    color:red;
+}
+.user-pic:hover{
+    opacity: 80%;
+}
+.navbar-second{
+    background-color: #1500ff;
+    width:1500px;
+    height:43px;
+    margin-top: 64px;
+}
+
+

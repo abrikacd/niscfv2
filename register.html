@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NISCF | Register</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form">
+        <h1 class="heading">Register</h1>
+        <form name="register" method="post" action="register_insert.php"></form>
+            <input type="text" name="username" placeholder="username" autocomplete="off" class="username" required>
+            <input type="text" name="name" placeholder="name" autocomplete="off" class="name" required>
+            <input type="email" name="email" placeholder="email" autocomplete="off" class="email" required>
+            <input type="password" name="pass" placeholder="password" autocomplete="off" class="password" required>
+            <input type="password" name="pass2" placeholder="password confirm" autocomplete="off" class="password_confirm" required>
+            <button class="submit-btn" onclick="alert('Registration successful, you can now log in')">register</button>
+        </form>
+        <a href="login.html" class="link">already have an account? log in</a>
+    </div>
+</body>
+<script>
+    const form=[...document.querySelector('.form').children]
+
+form.forEach((item, i) =>{
+    setTimeout(() =>{
+        item.style.opacity = 1;
+    }, i*100);
+})
+</script>
+</html>

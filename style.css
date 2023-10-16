@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Catamaran:wght@600&family=Karla&family=Noto+Serif&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Catamaran:wght@600&family=Karla&family=Noto+Serif&family=Nunito&family=Varela+Round&display=swap');
+
+*{
+    padding:0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+li, a {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 500px;
+    font-size: 20px;
+    color:aliceblue;
+    text-decoration:none;
+}
+.banner{
+    width:100%;
+    height:100vh;
+    background-image:url(IMG_2627\ copy.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width:85%;
+    margin:auto;
+    padding: 7px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: 200px;
+	width: 300px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style:none;
+    display: inline-block;
+    margin:0 20px; 
+    position:relative; 
+}
+.navbar ul li{
+    text-decoration:none;
+    color:aliceblue;
+    text-transform:uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width:0;
+    background: #A6Cfd5;
+    position: absolute;
+    left: 0;
+    bottom:-10px;
+    transition: 0.25s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+.About-Us{
+    font-family: 'Cabin', sans-serif;
+    width:80%;
+    margin:auto;
+    text-align:right;
+    padding-top:100px;
+}
+h1{
+    font-size: 36px;
+    font-weight:600;   
+}
+p:nth-child(2){
+    color:black;
+    font-size:25px;
+    font-weight:300;
+    line-height:22px;
+    padding:10px;
+}
+.About-Us{
+    width:90%;
+    display:flex;
+    justify-content:last baseline;
+    align-items: last baseline;
+    flex-direction: column;
+    text-align:left;
+    margin:20px auto;
+}
+.About-Us h1{
+    font-size: 50px;
+    color:black;
+    margin-bottom:25px;
+    position:relative;
+}
+.About-Us h1::after{
+    content:"";
+    position:absolute;
+    width: 100%;
+    height:4px;
+    display:block;
+    margin:0 auto;
+    background-color: #a6cfd5;
+}
+.About-Us p{
+    font-family: 'Varela Round', sans-serif;
+    font-size:30px;
+    color:#A6Cfd5;
+    margin-bottom:35px;
+}
+.about-image {
+    flex:1;
+    overflow:hidden;
+}
+.about-image img{
+    position: relative;
+    max-width:50%;
+}
+.about-content{
+    flex:1;
+}
+.about-content h2{
+    margin-right: 150px;
+    margin-left: 80px;
+    text-align: center;
+    font-family:'Nunito',sans-serif;
+    font-size:28px;
+}
+.footer{
+    width:100%;
+    text-align:center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top:20px;
+    font-weight:600;
+}
+/*image is "about-image", button is "aboutbutton"*/
+@media(max-width:700px){
+    .about-content h2{
+        font-size:25px;
+    }
+    li, a{
+        font-size:17px;
+    }
+    .logo{
+        height: 150px;
+        width: 230px;
+    }
+}
+    

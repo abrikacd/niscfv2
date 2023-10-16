@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Catamaran:wght@600&family=Karla&family=Noto+Serif&family=Varela+Round&display=swap');
+
+*{
+    margin:0px;
+    padding:px;
+    box-sizing:border-box;
+    font-family: 'Cabin',sans-serif;
+}
+.wrapper{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+}
+.about-image{
+    max-width:50%;
+    position:relative;
+}
+.hover-text{
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    position:absolute;
+    background:rgba(30, 47, 82, 0.6);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+    opacity:0;
+    transition: 0.30s;
+}
+.hover-text:hover{
+    opacity:1;
+}
+.hover-text h1{
+    font-size:45px;
+    color:#a6cfd5;
+    margin-bottom:15px;
+}
+.hover-text p{
+    font-size:19px;
+    color:whitesmoke;
+}
+.hover-text > *{
+    transform:translateY(40px);
+    transition: 0.3s;
+}
+.hover-text:hover > *{
+    transform:translateY(0px);
+}
+ul{
+    list-style-type: none;
+}

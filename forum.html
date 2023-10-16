@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/e861ac649f.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northbridge International School FORUM | Admin</title>
+    <link rel="stylesheet" href="teachstyle.css">
+</head>
+<body>
+    <i class="fa fa-inbox"></i>
+    <nav class="above">
+        <img src="LOGO copy 2.png" class="logo">
+        <div class="container">
+            <form>
+                <input type="text" name="" placeholder="Search...">
+                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        </div>
+        <ul>
+            <img src="stafficon.PNG" class="user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="stafficon.PNG" class="pfp">
+                        <h2>Admin</h2>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="login.html" class="sub-menu-link">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i>
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+            </div>
+        </ul>
+    </nav>
+<script>
+    let subMenu = document.getElementById("subMenu");
+    
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+ </script>
+    <nav class="navbar-second">
+    </nav>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Montserrat+Alternates:wght@300&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Cabin&family=Montserrat+Alternates:wght@300&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+*:focus{
+    outline: none;
+}
+body{
+    position:relative;
+    width:100%;
+    min-height:100vh;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-image:url(uss.PNG);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Cabin', sans-serif;
+}
+.form{
+    width:400px;
+    height:auto;
+    color:white;
+    font-family: 'Alata', sans-serif;
+    border: none;
+    opacity:85%;
+}
+form {
+    border:none;
+}
+.heading{
+    opacity:0;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 76px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+input{
+    font-family: 'Roboto Mono', sans-serif;
+    opacity: 0;
+    width:80%;
+    height:35px;
+    display:block;
+    margin:20px auto;
+    border-radius: 5px;
+    background: white;
+    border:none;
+    color: #2f5a5f;
+    padding:15px;
+    transition: .25s;
+    text-transform: lowercase;
+}
+.submit-btn{
+    font-family: 'Roboto Mono', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    width:80%;
+    height:35px;
+    display:block;
+    margin:20px auto;
+    border-radius: 5px;
+    background: white;
+    border:none;
+    color: #2f5a5f;
+    padding:15px;
+    transition: .25s;
+    text-transform: capitalize;
+}
+input::placeholder{
+    color:#468189;
+}
+input:focus,
+.submit-btn:hover{
+    background: #9DBEBB;
+    color:black;
+}
+input:focus::placeholder{
+    color:white;;
+}
+.submit-btn{
+    width:auto;
+    padding:0 20px;
+    cursor: pointer;
+    margin: 50px auto 0;
+}
+.link{
+    opacity: 0;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    display:block;
+    margin: 30px auto;
+}
+.link:hover{
+    color: #A6CfD5;
+}

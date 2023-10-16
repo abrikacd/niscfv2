@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Catamaran:wght@600&family=Karla&family=Noto+Serif&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Castoro&family=Catamaran:wght@600&family=Karla&family=Noto+Serif&family=Nunito&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Castoro&family=Catamaran:wght@600&family=Fira+Code&family=Karla&family=Noto+Serif&family=Nunito&family=Questrial&family=Varela+Round&display=swap');
+
+ *{
+    padding:0 0 0 0;
+    margin: 0 0 0 0;
+ }   
+
+
+.content {
+    font-weight: 500px;
+    font-size: 20px;
+    color:white;
+    text-decoration:none;
+    width:100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    font-family: 'Cabin', sans-serif;
+    font-size:60px;
+    margin-top:80px;
+}
+.content p{
+    font-family: 'Cabin', sans-serif;
+    color: white;
+    margin: 20px auto;
+    font-size:31px;
+    font-weight: 100;
+    line-height: 25px;
+}
+#buttonstart{
+    font-size: 21px;
+    font-family: 'Varela Round', sans-serif;
+    width:200px;
+    padding:15px 15px;
+    text-align:center;
+    margin:20px 10px;
+    border-radius: 100px;
+    font-weight:bolder;
+    border: 2px solid #a6cfd5;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 0px #a6cfd5,0 0 0px #a6cfd5;
+}
+
+span{
+    background: #a6cfd5;
+    height: 100%;
+    width:0;
+    border-radius: 25px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index: -1;
+    transition:0.25s;
+}
+#buttonstart:hover span{
+    width:100%;
+}
+aside#left {
+    width:50%;
+
+}
+aside#right {
+    width:50%;
+}
+    #buttonstart:hover {
+        color:black;
+        box-shadow: 0 0 5px #c2e7d9,
+        0 0 25px #c2e7d9, 0 0 50px #c2e7d9,
+        0 0 100px #c2e7d9, 0 0 200px #c2e7d9;
+        }
+@media(max-width: 700px){
+    .content h1{
+        font-size:40px;
+        margin-top:80px;
+    }
+    .content p{
+        font-size:25px;
+    }
+}
